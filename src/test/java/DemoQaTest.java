@@ -21,7 +21,7 @@ public class DemoQaTest {
         $("#firstName").setValue("Ivan");
         $("#lastName").setValue("Petrov");
         $("#userEmail").setValue("ab@ya.ru");
-        $("label[for='gender-radio-2").click();
+        $("#genterWrapper").find("label[for='gender-radio-2']").click();
         $("#userNumber").setValue("0123456789");
 
         // Выбираем дату рождения
@@ -31,9 +31,9 @@ public class DemoQaTest {
         $(".react-datepicker__day--010").click();
 
 
-        $("label[for='hobbies-checkbox-1']").click();
-        $("label[for='hobbies-checkbox-2']").click();
-        $("label[for='hobbies-checkbox-3']").click();
+        $("#hobbiesWrapper").find("label[for='hobbies-checkbox-1']").click();
+        $("#hobbiesWrapper").find("label[for='hobbies-checkbox-2']").click();
+        $("#hobbiesWrapper").find("label[for='hobbies-checkbox-3']").click();
         $("#subjectsInput").setValue("Computer Science").pressEnter();
         $("#subjectsInput").setValue("Arts").pressEnter();
 
